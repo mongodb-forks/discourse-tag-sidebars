@@ -36,7 +36,7 @@
         $(".sticky-sidebar").css("top", stickyOffset + "px");
       }
 
-      if (/^\/tag\//.test(path) && setups[tag.id]){ // If set, show tag sidebar
+      if (/^\/community\/forums\/tag\//.test(window.location.pathname) && setups[tag.id]){ // If set, show tag sidebar
         const setup = setups[tag.id];
         sidebarClasses(setup);
 
